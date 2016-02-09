@@ -1,0 +1,302 @@
+$primary-color: #03A9F4
+$gray: #b4b4b4
+$shadow: rgba(0, 0, 0, .5)
+$lora: 'Lora', serif
+$sans: 'Open Sans', sans-serif
+$behance: #1A9EFC
+html
+    height: auto
+
+h1
+    font:
+        size: 1rem
+        family: $sans
+        weight: bold
+    border-bottom: 1px solid
+    color: $primary-color
+    padding: 0 0 10px 0
+    margin: 40px 0 30px 0
+    text-transform: uppercase
+h2
+    font:
+        size: 1.5rem
+        family: $sans
+    padding: 0
+    margin: 0
+body
+    background-color: #F4F4F4
+    display: flex
+    justify-content: center
+    padding: 55px 0 28px 0
+    letter-spacing: 0.0125rem
+    width: 100%
+    font-size: 15px
+.download
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin-top: 60px
+    button
+        font:
+            size: 1.5rem
+            family: $sans
+        color: black
+        width: 50%
+        background-color: $primary-color
+        padding: 10px
+        border-radius: 2px
+        box-shadow: 2px 2px 10px $shadow
+        &:hover
+            transition: all ease-in-out 0.2s
+            box-shadow: 4px 4px 15px $shadow
+            background-color: rgba($primary-color, 0.8)
+            color: rgba(0, 0, 0, 0.5)
+.flex-container
+    width: 90%
+    height: auto
+    padding: 3.45% 2.5% 10% 2.5%
+    margin-bottom: 200px
+    margin-top: 100px
+    background-color: white
+    max-width: 1050px
+    box-shadow: 4px 4px 10px $shadow
+    z-index: 2
+    opacity: 1
+.flex-item
+    align-items: center
+
+header.flex-item
+    flex: 1 100%
+    padding: 5% 5%
+section.flex-item
+    flex: 1 50%
+    padding: 0 5%
+    box-sizing: border-box
+.logo
+    width: 62px
+    margin-bottom: 48px
+.light
+    font:
+        size: 2rem
+        family: $lora
+.name
+    font:
+        size: 2rem
+        family: $sans
+        weight: bold
+.byline
+    font-size: 3rem
+    font-family: $lora
+    color: #A5A5A5
+.timestamp
+    font:
+        size: 0.7rem
+        family: $lora
+    text-transform: uppercase
+    margin: 0 0 12px 0
+    padding: 0
+    color: $gray
+    letter-spacing: .075rem
+.role
+    font:
+        size: 1rem
+        family: $lora
+        style: italic
+    padding: 0
+    margin: 0
+.description
+    font-size: 1rem
+    font-family: $sans
+    padding: 0
+    margin: 12px 0 0 0
+    line-height: 136%
+    width: 96%
+.projects
+    font:
+        size: 1rem
+        family: $sans
+    margin: 20px 0
+    padding: 0
+    a
+        display: inline-block
+        border: 1px solid $gray
+        color: $gray
+        padding: 7px 14px
+        border-radius: 2px
+        font-size: 1rem
+        margin: 0 0px 8px 0
+    span:hover
+        i
+            transition: all ease-in-out 0.2s
+            color: $primary-color
+            position: relative
+            top: -2px
+            right: -2px
+#education
+    padding: 0
+    margin: 5px 0 0 0
+    overflow: hidden
+    text-align: left
+    ul
+        display: block
+        list-style-type: disc
+li
+    margin: 0
+    padding: 0
+    float: left
+    display: inline
+#education
+    li:nth-child(2n+1)
+        font:
+            family: $sans
+            weight: bold
+        width: 28%
+ul.skills
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    align-items: center
+ul.skills li
+    display: inline-block
+    padding: 7px 14px
+    margin: 0 4px 8px 0
+.skills img
+    width: 60px
+.rotate
+    transform: rotate(-45deg)
+    padding: 0
+    color: rgba($gray, 0.5)
+i
+    padding: 0
+    margin: 0 8px 8px 0
+footer
+    position: fixed
+    bottom: 70px
+    right: 0
+    width: 100%
+    text-align: center
+    .email
+        font:
+            size: 1.5rem
+            family: $lora
+            weight: bold
+        color: black
+    span
+        i
+            background-color: rgba($gray, 0.5)
+            padding: 10px
+            color: white
+            font-size: 1.2rem !important
+            border-radius: 50%
+            &:hover
+                transition: all ease-in-out 0.2s
+                box-shadow: 2px 2px 10px $shadow
+                color: $primary-color
+.space
+    margin-top: 8%
+.work
+    width: 100%
+    position: fixed
+    left: 0
+    right: 0
+    background-color: #ffffff
+    top: 100%
+    z-index: 3
+    margin: 0
+    height: 100%
+    overflow-y: scroll
+    text-align: center
+    padding-bottom: 100px
+.hide
+    transition: all ease-in-out 0.3s
+    display: none
+.show
+    transition: all ease-in-out 0.5s
+    opacity: 1 !important
+    display: block !important
+    position: absolute
+.work-info-container
+    padding: 10px
+    h2
+        font-size: 3rem
+        margin-top: 2%
+.close
+    position: absolute
+    top: 10px
+    right: 10px
+    font-size: 1.5rem
+.top
+    position: fixed
+    bottom: 50px
+    right: 10px
+    font-size: 1.5rem
+    opacity: 1
+.card
+    height: auto
+    width: auto
+    box-shadow: 2px 2px 10px $shadow
+    background-color: white
+    margin: 5px
+    h3
+        font-size: 1.4rem
+.behance-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+.behance
+    margin-top: 4%
+    width: 50%
+    height: 100px
+    background-color: $behance
+    padding: 20px
+    font-size: 2rem
+    box-shadow: 2px 2px 5px $shadow
+    color: white
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+        transition: all ease-in-out 0.3s
+        box-shadow: 4px 4px 10px $shadow
+        background-color: rgba($behance, 0.8)
+        opacity: 0.8
+@media screen and (max-width: 1037px)
+    #education
+        li:nth-child(2n+1)
+            font:
+                family: $sans
+                weight: bold
+            width: 27%
+@media screen and (max-width: 640px)
+    #education
+        li:nth-child(2n+1)
+            font:
+                family: $sans
+                weight: bold
+            width: 100%
+
+@media screen and (max-width: 412px)
+    .light
+        font-size: 1.7rem
+    .name
+        font-size: 1.7rem
+    .flex-container
+        width: 100%
+        padding: 0
+    body
+        padding-top: 0
+    .flex-container
+        margin-top: 0
+    .byline
+        font-size: 2rem
+    .projects .fa
+        display: none
