@@ -1,11 +1,3 @@
-$(function(){
-        $(".element").typed({
-            strings: ["Developer", "Designer", "Wizard"],
-            typeSpeed: 60,
-            backDelay: 2000,
-            loop: false
-        });
-    });
 jQuery(document).ready(function () {
     $(".display a").click(function () {
         $("body").css("overflow-y", "hidden");
