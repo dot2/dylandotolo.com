@@ -232,27 +232,58 @@ footer
         text-align: center
         margin-top: 5%
 .work-header
-    height: 20vh
+    height: 40vh
     display: flex
-    align-items: center
+    padding: 20px
     justify-content: center
     flex-direction: column
-    background-color: #D46161
+    // background-color: #D46161
+    background-color: #fff
     box-shadow: 2px 2px 5px $shadow
     h2
         font-size: 3rem
-        text-align: center
-        color: #fff
+        text-align: left
+        color: #000
     .button-link
         margin-top: 3%
-        background-color: #fff
+        background-color: $primary-color
         width: 150px
         border-radius: 2px
-        color: #000
+        color: #fff
         box-shadow: 2px 2px 4px $shadow
         font-size: 1.2rem
         &:hover
             box-shadow: 4px 4px 10px $shadow
+#wtfshouldibuild
+    background-color: #F4F4F4
+.summary-wrapper
+    padding: 10px
+    margin-top: -5%
+.flex-row
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    img
+        width: 90%
+.summary
+    max-width: 800px
+    p
+        line-height: 1.8
+        text-align: left
+        font:
+            size: 1rem
+            family: $sans
+    h2
+        text-align: left
+        margin: 10px 0 10px 0
+        color: $primary-color
+        text-transform: uppercase
+        border-bottom: solid
+        border-color: $primary-color
+        font:
+            size: 1.5rem
+            family: $lora
 .close
     position: absolute
     top: 10px

@@ -3521,6 +3521,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/summary\/wtfshouldibuild.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55533,
+		"inputAbbreviatedPath": "\/images\/summary\/wtfshouldibuild.png",
+		"outputAbbreviatedPath": "\/images\/summary\/wtfshouldibuild.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
