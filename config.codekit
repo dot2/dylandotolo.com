@@ -3521,6 +3521,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/summary\/iphone6mockup.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153692,
+		"inputAbbreviatedPath": "\/images\/summary\/iphone6mockup.png",
+		"outputAbbreviatedPath": "\/images\/summary\/iphone6mockup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/summary\/iphone6plusmockup.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69932,
+		"inputAbbreviatedPath": "\/images\/summary\/iphone6plusmockup.png",
+		"outputAbbreviatedPath": "\/images\/summary\/iphone6plusmockup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/summary\/wtfmockup.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112024,
+		"inputAbbreviatedPath": "\/images\/summary\/wtfmockup.png",
+		"outputAbbreviatedPath": "\/images\/summary\/wtfmockup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/summary\/wtfshouldibuild.png": {
 		"fileType": 32768,
 		"ignore": 0,
