@@ -3568,6 +3568,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/summary\/txpoolspaiphone6plus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 132684,
+		"inputAbbreviatedPath": "\/images\/summary\/txpoolspaiphone6plus.png",
+		"outputAbbreviatedPath": "\/images\/summary\/txpoolspaiphone6plus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/summary\/txpoolspamockup.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 407890,
+		"inputAbbreviatedPath": "\/images\/summary\/txpoolspamockup.png",
+		"outputAbbreviatedPath": "\/images\/summary\/txpoolspamockup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/summary\/txpoolspanexus9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 549453,
+		"inputAbbreviatedPath": "\/images\/summary\/txpoolspanexus9.png",
+		"outputAbbreviatedPath": "\/images\/summary\/txpoolspanexus9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/summary\/wtfmockup.png": {
 		"fileType": 32768,
 		"ignore": 0,

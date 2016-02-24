@@ -13,4 +13,9 @@ jQuery(document).ready(function () {
         $(".work").animate({ scrollTop: 0}, "slow");
         return false;
     });
+
+    $(".summary-wrapper").click(function() {
+        $(".work").removeClass("show");
+        $("body").css("overflow-y", "scroll");
+    });
 });
