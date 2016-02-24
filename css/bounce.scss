@@ -1,0 +1,58 @@
+// CONFIGURABLE
+$bounce-time: 2s; // the time one full animation cycle will take
+$bounce-delay-divisor: 15; // the animation delay divisor; delay is calculated by dividing the bounce-time by this number
+$bounce-timing-function: cubic-bezier(0.2, 0.0, 0.4, 1.0); // the animation timing curve
+$bounce-height: 0.8; // the distance letters will lift to (in ems)
+$letter-initial-scale: 100%; // the initial point letter scale multiplier
+$letter-peak-scale: 105%; // the peak point letter scale multiplier
+$shadow-opacity: 35%; // the shadow's opacity
+$shadow-scattering-initial: 0.025; // the amount of shadow scattering in the animation's initial point (in ems)
+$shadow-scattering-peak: 0.175; // the amount of shadow scattering in the animation's peak point (in ems)
+$colors: #ff7473, #ffc952, #47b8e0, #9baec8, #ea4335; // the letter colors; make sure there is the same number of colors as letters
+
+// UNCONFIGURABLE
+$bounce-half-time: $bounce-time / 2;
+$bounce-delay: $bounce-time / $bounce-delay-divisor;
+$bounce-height: $bounce-height * 1em;
+$letter-initial-scale: $letter-initial-scale / 100%;
+$letter-peak-scale: $letter-peak-scale / 100%;
+$shadow-opacity: $shadow-opacity / 100%;
+$shadow-scattering-initial: $shadow-scattering-initial * 1em;
+$shadow-scattering-peak: $shadow-scattering-peak * 1em;
+
+
+.nameBounce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nameBounce i {
+  animation: bounce $bounce-half-time $bounce-timing-function infinite alternate;
+  display: inline-block;
+  transform: translate3d(0, 0, 0) scale($letter-initial-scale);
+  text-shadow: rgba(#000, $shadow-opacity) 0 0 $shadow-scattering-initial;
+  font-family: "Product Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 15vmin;
+  font-weight: 700;
+  font-style: normal;
+  white-space: nowrap;
+  @for $i from 1 through length($colors) {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * $bounce-delay;
+      color: unquote(nth($colors, $i));
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0) scale($letter-initial-scale);
+    text-shadow: rgba(#000, $shadow-opacity) 0 0 $shadow-scattering-initial;
+  } 100% {
+    transform: translate3d(0, -$bounce-height, 0) scale($letter-peak-scale);
+    text-shadow: rgba(#000, $shadow-opacity) 0 $bounce-height / $letter-peak-scale $shadow-scattering-peak;
+  }
+}
