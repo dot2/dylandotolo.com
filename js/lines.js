@@ -8,7 +8,7 @@
 
     function initHeader() {
         width = window.innerWidth;
-        height = 350;
+        height = 300;
         // height = window.innerHeight;
         target = {x: width/2, y: height/2};
 
@@ -120,10 +120,10 @@
                 if(Math.abs(getDistance(target, points[i])) < 4000) {
                     points[i].active = 0.3;
                     points[i].circle.active = 0.6;
-                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 400000) {
                     points[i].active = 0.1;
                     points[i].circle.active = 0.3;
-                } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 400000) {
                     points[i].active = 0.02;
                     points[i].circle.active = 0.1;
                 } else {
