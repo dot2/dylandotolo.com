@@ -33,7 +33,26 @@ html(class="no-js" lang="en")
                 h1 #[span(class="blue") Hello], I am #[span(class="glitch" data-text="Dylan") Dylan]
             canvas(id="demo-canvas")
         div(class="info-summary")
-            h2 I am a developer looking to create amazing things.
-            
+            h2 I am a developer looking to make awesome things.
+            //- Personal Card
+            div(class="info-card")
+                div(class="card-header")
+                    span header
+                div(class="profile")
+                    img(src="../images/profile-img.jpg" class="profile-img")
+                div(class="btn")
+                    span My Portfolio
+            include ./includes/starwars.jade
+        div(class="social-wrapper")
+            div(class="info-card")
+                div(class="social")
+                    span github
+            div(class="info-card")
+                div(class="social")
+                    span twitter
+            div(class="info-card")
+                div(class="social")
+                    span youtube
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js")    
         script(src="../js/lines.js")
+        script(src="../js/starwars.js")
