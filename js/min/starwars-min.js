@@ -1,1 +1,1 @@
-var bb8=document.getElementById("bb8"),tween;tween=TweenMax.to(bb8,4,{left:"-450px",delay:3,repeat:1,repeatDelay:.5,yoyo:!1,ease:Power0.SlowMo});
+var bb8=document.getElementById("bb8"),tween;tween=TweenMax.to(bb8,4,{left:"-450px",delay:3,yoyo:!1,ease:Power0.SlowMo});

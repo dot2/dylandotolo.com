@@ -30,10 +30,10 @@ html(class="no-js" lang="en")
             div(class="info")
                 img(src="../images/logo.png")
                 //- h1(class="glitch" data-text="Hello, I am Dylan") Hello,I am Dylan
-                h1 #[span(class="blue") Hello], I am #[span(class="glitch" data-text="Dylan") Dylan]
+                h1 #[span(class="blue") Hello], I am Dylan]
             canvas(id="demo-canvas")
         div(class="info-summary")
-            h2 I am a developer looking to make awesome things.
+            h2 I am a #[span(class="glitch" data-text="developer")developer] looking to make awesome things.
             //- Personal Card
             div(class="info-card")
                 div(class="card-header")
@@ -42,17 +42,31 @@ html(class="no-js" lang="en")
                     img(src="../images/profile-img.jpg" class="profile-img")
                 div(class="btn")
                     span My Portfolio
+            //- bb8 animation
             include ./includes/starwars.jade
+        //- social links
         div(class="social-wrapper")
+            //- GitHub info card
             div(class="info-card")
                 div(class="social")
-                    span github
+                    img(src="../images/github-octocat.png")
+                div(class="social-links")
+                    div(class="btn")
+                        span Code
+            //- Twitter info card
             div(class="info-card")
                 div(class="social")
-                    span twitter
+                    img(src="../images/twitter.png")
+                div(class="social-links")
+                    div(class="btn")
+                        span Tweets
+            //- YouTube info card
             div(class="info-card")
                 div(class="social")
-                    span youtube
+                    img(src="../images/youtube.png")
+                div(class="social-links")
+                    div(class="btn")
+                        span Videos
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js")    
         script(src="../js/lines.js")
         script(src="../js/starwars.js")
