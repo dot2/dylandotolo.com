@@ -1,5 +1,5 @@
 doctype html
-html(class="no-js" lang="en")
+html
     head
         meta(charset="utf-8")
         meta(http-equiv="x-ua-compatible" content="ie=edge")
@@ -23,50 +23,57 @@ html(class="no-js" lang="en")
         link(href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css')
         <!-- Open Sans Font CDN -->
         link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css')
+        <!-- Monserrat Font CDN -->
+        link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
         //- Titillium Font CDN
         link(href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css')
+
     body
-        header(id="large-header" class="main-header")
-            div(class="info")
-                img(src="../images/logo.png")
-                //- h1(class="glitch" data-text="Hello, I am Dylan") Hello,I am Dylan
-                h1 #[span(class="blue") Hello], I am Dylan]
-            canvas(id="demo-canvas")
-        div(class="info-summary")
-            h2 I am a #[span(class="glitch" data-text="developer")developer] looking to make awesome things.
-            //- Personal Card
-            div(class="info-card")
-                div(class="card-header")
-                    span header
-                div(class="profile")
-                    img(src="../images/profile-img.jpg" class="profile-img")
-                div(class="btn")
+    header(id="large-header" class="main-header")
+        div(class="info")
+            img(src="../images/logo.png")
+            //- h1(class="glitch" data-text="Hello, I am Dylan") Hello,I am Dylan
+            h1 #[span(class="blue") Hello], I am Dylan
+        canvas(id="demo-canvas")
+    div(class="info-summary")
+        h2 I am a developer looking to make awesome things.
+        //- Personal Card
+        div(class="info-card")
+            div(class="card-header")
+                span header
+            div(class="profile")
+                img(src="../images/profile-img.jpg" class="profile-img")
+            div(class="btn")
+                a(href="../pages/resume.html")
                     span My Portfolio
-            //- bb8 animation
-            include ./includes/starwars.jade
-        //- social links
-        div(class="social-wrapper")
-            //- GitHub info card
-            div(class="info-card")
-                div(class="social")
-                    img(src="../images/github-octocat.png")
-                div(class="social-links")
-                    div(class="btn")
-                        span Code
-            //- Twitter info card
-            div(class="info-card")
-                div(class="social")
-                    img(src="../images/twitter.png")
-                div(class="social-links")
-                    div(class="btn")
-                        span Tweets
-            //- YouTube info card
-            div(class="info-card")
-                div(class="social")
-                    img(src="../images/youtube.png")
-                div(class="social-links")
-                    div(class="btn")
-                        span Videos
+        //- bb8 animation
+        include ./pages/starwars.jade
+    //- social links
+    div(class="social-wrapper")
+        //- GitHub info card
+        div(class="info-card")
+            div(class="social")
+                img(src="../images/github-octocat.png")
+            div(class="social-links")
+                div(class="btn")
+                    span Code
+        //- Twitter info card
+        div(class="info-card")
+            div(class="social")
+                img(src="../images/twitter.png")
+            div(class="social-links")
+                div(class="btn")
+                    span Tweets
+        //- YouTube info card
+        div(class="info-card")
+            div(class="social")
+                img(src="../images/youtube.png")
+            div(class="social-links")
+                div(class="btn")
+                    span Videos
+
+        script(src="js/app.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js")    
         script(src="../js/lines.js")
         script(src="../js/starwars.js")
